@@ -1,8 +1,7 @@
 import pandas as pd 
 import numpy as np 
 import streamlit as st
-import seaborn as sns
-import matplotlib.pyplot as plt
+
 
 ##config pestaña
 st.set_page_config(layout='centered',page_title='A team fan page',page_icon=':heart:')
@@ -58,11 +57,6 @@ with steps[4]:
     m2.metric(label='Métrica 2',value=np.mean(id1['Clics']), delta=str(np.mean(id1['Impresiones']))+' Promedios',delta_color='inverse')
 
 
-    varx= st.selectbox('Escoge el ID de Metrica',met_df['ID_Metrica'])
-    vary= st.selectbox('Escoge numero de conversiones', met_df['ID_Campana'])
-    fig, ax= plt.subplots()
-    ax= sns.scatterplot(data=met_df, x=varx, y=vary, hue='Conversiones')
-    st.pyplot(fig)
 
 
 
