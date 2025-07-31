@@ -25,7 +25,7 @@ with steps[0]:
 
 with steps[1]:
     st.write('Amadeo: The sweetest and cuddliest boy')
-    st.image('Amadeo.jpg',width=180)
+    st.image('amadeo.jpg',width=180)
 
 with steps[2]:
 
